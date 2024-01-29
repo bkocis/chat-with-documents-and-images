@@ -1,0 +1,5 @@
+qdrant_client
+torch
+transformers
+pypdf2
+pypdf
