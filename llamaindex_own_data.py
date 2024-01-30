@@ -22,13 +22,6 @@ def read_pdf(path):
     PDFReader = download_loader("PDFReader")
     loader = PDFReader()
     return loader.load_data(Path(path))
-    # text = ""
-    # with open(Path(path), 'r') as f:
-    #     pdf_document = PdfReader(f)
-    #     for page in pdf_document.pages:
-    #         text += page.extract_text()
-    # return text
-
 
 # documents, collection_name = read_json('./data/tinytweets.json'), "tweets"
 documents, collection_name = read_pdf("./data/Kocsis_Balazs_Phd_thesis.pdf"), "my_thesis"
@@ -50,12 +43,12 @@ index = VectorStoreIndex.from_documents(documents,
                                         storage_context=storage_context)
 
 query_engine = index.as_query_engine(streaming=True)
-response = query_engine.query("Can you summarize the result about Refinement of bone material using soft constraints with various sigma values",
-                              )
+while True:
+    query_message = input("Q: ")
 
-response.print_response_stream()
+    response = query_engine.query(query_message)
 
-# for text in response.response_gen:
-#     sys.stdout.write(str(text))
-# sys.stdout.flush()
-# print(response)
+    response.print_response_stream()
+
+    sys.stdout.flush()
+    sys.stdout.write("\n")
