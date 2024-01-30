@@ -1,4 +1,7 @@
-/qdrant_data/
 .idea/
+
+qdrant_data/*
+!qdrant_data/.gitkeep
+
 data/*
 !data/.gitkeep
