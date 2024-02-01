@@ -1,10 +1,21 @@
 ---
-Run LLM-s on local with ollama and query private documents with llamaindex
-==========================================================================
+Chat with private documents using llamaindex and ollama on local computer 
+=========================================================================
 
 ## Description 
 This is a small application utilizing ollama, that enables a Q-A chat with private documents on local computer. The code is 
-modified from the original post by [llamaindex](https://blog.llamaindex.ai/running-mixtral-8x7-locally-with-llamaindex-e6cebeabe0ab)  
+modified from the original post by [llamaindex](https://blog.llamaindex.ai/running-mixtral-8x7-locally-with-llamaindex-e6cebeabe0ab) 
+The main difference is to chat loop, for simplicity of the application.
+
+```python
+    # main CLI interaction loop
+    while True:
+        query_message = input("Q: ")
+        response = query_engine.query(query_message)
+        response.print_response_stream()
+        sys.stdout.flush()
+        sys.stdout.write("\n")
+```
 
 ## Getting started
 
