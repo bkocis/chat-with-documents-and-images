@@ -14,4 +14,4 @@ Running/stopping the ollama service on local
 
 `sudo systemctl status ollama`
 
-`sudi systemctl stop/start ollama`
+`sudo systemctl stop/start ollama`

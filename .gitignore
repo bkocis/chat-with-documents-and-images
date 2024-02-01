@@ -5,3 +5,4 @@ qdrant_data/*
 
 data/*
 !data/.gitkeep
+/resources/
