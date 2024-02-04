@@ -4,3 +4,4 @@ torch
 transformers
 pypdf2
 pypdf
+ollama

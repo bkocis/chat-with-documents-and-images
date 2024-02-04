@@ -1,4 +1,5 @@
 ---
+
 Chat with private documents using llamaindex and ollama on local computer 
 =========================================================================
 
@@ -38,3 +39,17 @@ use systemctl commands:
 A small write-up can be found in my [medium article](https://medium.com/@balazskocsis/chatting-with-your-documents-in-the-cli-with-ollama-and-llamaindex-13481903f7ef).
 
 
+Vision Models - Image understanding
+===================================
+
+Ollama supports LLaVA (Large Language-and-Vision Assistant) model version 1.6! 
+
+#### Download model
+
+By running: 
+
+`ollama run llava:34b` or `llava:13b` or `llava:7b`
+
+References on llava: 
+- [ollama vision models](https://ollama.ai/blog/vision-models)
+- [llava version 1.6 release notes](https://llava-vl.github.io/blog/2024-01-30-llava-1-6/)
