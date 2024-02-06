@@ -3,6 +3,8 @@
 
 ## Chat with private documents using llamaindex and ollama on local computer 
 
+-> `chat-with-documents.py`
+
 #### Description 
 This is a small application utilizing ollama, that enables a Q-A chat with private documents on local computer. The code is 
 modified from the original post by [llamaindex](https://blog.llamaindex.ai/running-mixtral-8x7-locally-with-llamaindex-e6cebeabe0ab) 
@@ -41,6 +43,7 @@ A small write-up can be found in my [medium article](https://medium.com/@balazsk
 
 ## Vision Models - Image understanding
 
+-> `image-understanding-llava.py`
 
 Ollama supports LLaVA (Large Language-and-Vision Assistant) model version 1.6! 
 
