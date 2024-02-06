@@ -84,7 +84,7 @@ For example:
 
 ```
 $ python image-understanding-llava.py
-
+```
 <code> 
 Type /load <image_path> to load an image, and 'quit' to exit.
 Type a command, or a question to image []:<b>/load</b> /home/snow/Downloads/llava1p6_test.jpg
@@ -102,7 +102,7 @@ Type a command, or a question to image ['/home/snow/Downloads/llava1p6_test.jpg'
 Type a command, or a question to image ['/home/snow/Downloads/llava1p6_test.jpg']:
 
 </code>
-```
+
 
 The `/load` phrase allows to loop to parse a new filename on your local computer, pointing to the image. This will be then 
 added to the `images` list, that `ollama.chat` needs to apply the model.
