@@ -78,21 +78,22 @@ Conversational chat loop allows to load new images and ask new questions about i
 For example: 
 ![](https://ollama.ai/public/blog/jmb.jpg)
 ```markdown
-**Q: /load /home/snow/Downloads/llava1p6_test.jpg**
-Ask anything about the image: What is this image?
- The image appears to be a street art piece. It features a stylized drawing or painting of what looks like a cartoon dinosaur wearing a crown, with text above it that reads "Jean-Michel Basquiat" and below it that says "Ayicon." The artwork has an urban, graffiti vibe and seems to be paying tribute to the artist Jean-Michel Basquiat, who was famously known for his unique style. The name "Basquiat" is a reference to one of the most prominent figures in modern art history, known for his distinctive paintings that often combined elements of street culture with high art themes and motifs. 
+$ python image-understanding-llava.py
 
- The image shows a street art piece featuring a stylized black cartoon figure with horns and what appears to be an animal-like head, wearing a crown. There is text on the artwork that reads "Jean-Michel Basquiat" and "anyon," which seems to be part of the artwork's title or message. The art style has a graffiti-like quality with bold lines and vivid colors, which is characteristic of street art. 
+Type /load <image_path> to load an image, and 'quit' to exit.
+Type a command, or a question to image []:**/load** /home/snow/Downloads/llava1p6_test.jpg
+Ask anything about the image: what do you see in the image?
+ The image shows a graffiti artwork featuring a stylized black dinosaur with a crown on its head. Below the dinosaur, there is text that reads "JEAN-MICHEL BASQUIAT" and "ASYCON." The artwork has a vibrant and colorful style, typical of street art or graffiti. It appears to be done in chalk or paint on what seems to be a wall or a board. 
 
-**Q: Who is the author of the image?**
+ The image shows a piece of wall art featuring a black silhouette of an animal, likely a wolf or a similar canid, with a crown on its head. Above the animal, there is text that reads "Jean-Michel Basquiat" and below it, another line of text says "Any Icon." The artwork has a stylized appearance with bold outlines and minimal detailing, suggesting it could be a reference to Jean-Michel Basquiat's work or an homage to him as an icon. The background is plain, which emphasizes the artwork itself. 
+
+Type a command, or a question to image ['/home/snow/Downloads/llava1p6_test.jpg']:**Who is the author of this artwork?**
  Jean-Michel Basquiat 
 
-**Q: Can you give me a short bio of the author?**
- This image features a graffiti mural with various elements. The most prominent figure in the foreground is Jean-Michel Basquiat, a famous American artist known for his unique and often controversial art style that incorporated elements of both African American culture and the Haitian flag motif. He was born in Brooklyn, New York, to parents who were immigrants from Haiti.
+Type a command, or a question to image ['/home/snow/Downloads/llava1p6_test.jpg']:**Can you give a short bio of the artist?**
+ The image shows a piece of street art featuring a colorful character with the text "Jean-Michel Basquiat" and "Ayon." This suggests that the artwork is likely inspired by Jean-Michel Basquiat, a prolific Haitian-American artist who was active during the late 20th century. He is considered one of the most important figures in modern art and is known for his bold, colorful, and often symbolic paintings that explore themes of race, identity, and social commentary. The text "Ayon" may refer to a pseudonym or an artistic project associated with Basquiat's work. 
 
-Basquiat is considered one of the founders of the neo-expressionist movement in contemporary art, and his work often addressed social and political issues of the time, including identity, race, and class. His art was highly influential, with many considering him a pioneer of street art and a significant figure in the development of urban contemporary art.
-
-The mural appears to be a tribute or homage to Basquiat and may include additional text that is not fully visible in the image provided. The overall message seems to relate to Basquiat's legacy and influence on modern art. 
+Type a command, or a question to image ['/home/snow/Downloads/llava1p6_test.jpg']:
 
 
 ```
