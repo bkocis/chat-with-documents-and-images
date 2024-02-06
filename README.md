@@ -85,22 +85,23 @@ For example:
 ```
 $ python image-understanding-llava.py
 
+<code> 
 Type /load <image_path> to load an image, and 'quit' to exit.
-Type a command, or a question to image []:**/load** /home/snow/Downloads/llava1p6_test.jpg
+Type a command, or a question to image []:<b>/load</b> /home/snow/Downloads/llava1p6_test.jpg
 Ask anything about the image: what do you see in the image?
  The image shows a graffiti artwork featuring a stylized black dinosaur with a crown on its head. Below the dinosaur, there is text that reads "JEAN-MICHEL BASQUIAT" and "ASYCON." The artwork has a vibrant and colorful style, typical of street art or graffiti. It appears to be done in chalk or paint on what seems to be a wall or a board. 
 
  The image shows a piece of wall art featuring a black silhouette of an animal, likely a wolf or a similar canid, with a crown on its head. Above the animal, there is text that reads "Jean-Michel Basquiat" and below it, another line of text says "Any Icon." The artwork has a stylized appearance with bold outlines and minimal detailing, suggesting it could be a reference to Jean-Michel Basquiat's work or an homage to him as an icon. The background is plain, which emphasizes the artwork itself. 
 
-Type a command, or a question to image ['/home/snow/Downloads/llava1p6_test.jpg']:**Who is the author of this artwork?**
+Type a command, or a question to image ['/home/snow/Downloads/llava1p6_test.jpg']:<b>Who is the author of this artwork?</b>
  Jean-Michel Basquiat 
 
-Type a command, or a question to image ['/home/snow/Downloads/llava1p6_test.jpg']:**Can you give a short bio of the artist?**
+Type a command, or a question to image ['/home/snow/Downloads/llava1p6_test.jpg']:<b>Can you give a short bio of the artist?</b>
  The image shows a piece of street art featuring a colorful character with the text "Jean-Michel Basquiat" and "Ayon." This suggests that the artwork is likely inspired by Jean-Michel Basquiat, a prolific Haitian-American artist who was active during the late 20th century. He is considered one of the most important figures in modern art and is known for his bold, colorful, and often symbolic paintings that explore themes of race, identity, and social commentary. The text "Ayon" may refer to a pseudonym or an artistic project associated with Basquiat's work. 
 
 Type a command, or a question to image ['/home/snow/Downloads/llava1p6_test.jpg']:
 
-
+</code>
 ```
 
 The `/load` phrase allows to loop to parse a new filename on your local computer, pointing to the image. This will be then 
