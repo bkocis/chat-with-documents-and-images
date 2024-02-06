@@ -73,7 +73,7 @@ Conversational chat loop allows to load new images and ask new questions about i
 ```
 
 For example: 
-<img src="https://ollama.ai/public/blog/jmb.jpg>
+![Alt text]("https://ollama.ai/public/blog/jmb.jpg)
 ```markdown
 **Q: /load /home/snow/Downloads/llava1p6_test.jpg**
 Ask anything about the image: What is this image?
