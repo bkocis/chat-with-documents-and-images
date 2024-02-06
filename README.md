@@ -63,21 +63,26 @@ Conversational chat loop allows to load new images and ask new questions about i
 
 ```python 
     while True:
-        query_message = input("Q: ")
+        query_message = input(f"Type a command, or a question to image {image_list}:")
+        if query_message.lower() == 'quit':
+            break
         if query_message.startswith("/load"):
             new_image = query_message.split("/load")[1].strip()
             image_list = [new_image]
             query_message = input("Ask anything about the image: ")
             print_out_the_response(query_message, image_list)
-        if image_list == [] or query_message == '':
+        if image_list == []:
             print("Give an image path after writing /load :\n")
+        if query_message == '':
+            print("Ask another question:")
         if query_message != '' and image_list != []:
             print_out_the_response(query_message, image_list)
 ```
 
 For example: 
 ![](https://ollama.ai/public/blog/jmb.jpg)
-```markdown
+
+```
 $ python image-understanding-llava.py
 
 Type /load <image_path> to load an image, and 'quit' to exit.
