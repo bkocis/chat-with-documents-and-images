@@ -1,6 +1,8 @@
 ---
 # CLI chat with documents / images `ollama`'s models
 
+I've wrote a few articles about ollama and the models I tried, check it out [here](https://medium.com/@balazskocsis/list/ollama-run-llms-localy-f9f124256761).
+
 ## Chat with private documents using llamaindex and ollama on local computer 
 
 -> `chat-with-documents.py`
