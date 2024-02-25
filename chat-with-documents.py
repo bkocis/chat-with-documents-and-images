@@ -57,7 +57,7 @@ def initialize_qdrant(documents, client, collection_name, llm_model):
 if __name__ == "__main__":
     # definition of variables
     data_filename = os.environ['DOCUMENT_FILENAME']
-    llm_model = Ollama(model="mixtral")
+    llm_model = Ollama(model="mixtral")  # "gemma"
     client = create_qdrant_clinet(path="./qdrant_data")
     documents, collection_name = create_collection(data_filename)
     query_engine = initialize_qdrant(documents, client, collection_name, llm_model)

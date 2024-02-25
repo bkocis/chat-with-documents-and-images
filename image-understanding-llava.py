@@ -33,7 +33,7 @@ if __name__ == "__main__":
     image_list = []
     print("Type /load <image_path> to load an image, and 'quit' to exit.")
     while True:
-        query_message = input(f"Type a command, or a question to image {image_list[0]}:")
+        query_message = input(f"Type a command, or a question to image {image_list}:")
         if query_message.lower() == 'quit':
             break
         if query_message.startswith("/load"):
