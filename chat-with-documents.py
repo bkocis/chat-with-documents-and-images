@@ -29,7 +29,7 @@ def create_qdrant_clinet(path: str):
 
 def create_collection(data_filename: str):
     basename = data_filename.split(".")[0].replace(" ", "_")
-    extension = data_filename.split(".")[1]
+    extension = data_filename.split(".")[-1]
     path = os.path.join("data", data_filename)
     match extension:
         case "pdf":
@@ -58,7 +58,7 @@ if __name__ == "__main__":
     # definition of variables
     data_filename = os.environ['DOCUMENT_FILENAME']
     llm_model = Ollama(model="mixtral")  # "gemma"
-    client = create_qdrant_clinet(path="./qdrant_data")
+    client = create_qdrant_clinet(path=os.environ['QUADRANT_PATH'])
     documents, collection_name = create_collection(data_filename)
     query_engine = initialize_qdrant(documents, client, collection_name, llm_model)
 
