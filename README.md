@@ -1,5 +1,5 @@
 ---
-# CLI chat with documents / images `ollama`'s models
+# CLI chat with documents and images
 
 I've wrote a few articles about ollama and the models I tried, check it out [here](https://medium.com/@balazskocsis/list/ollama-run-llms-localy-f9f124256761) <a href="https://medium.com/@balazskocsis/list/ollama-run-llms-localy-f9f124256761" target="blank"><img align="top" src="https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white" alt="me on medium"/></a> 
 
